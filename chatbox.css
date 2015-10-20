@@ -1,0 +1,156 @@
+.circle_menu {
+  width: 40px;
+  height: 40px;
+  margin: 0 0.5rem 0 0.5rem;
+  border-radius: 40px;
+  background: #3498db;
+  box-shadow: 2px 3px 6px #aaa;  
+  z-index: 3;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  font-size: 1.25rem;
+  display: inline-block;
+  cursor: pointer;
+  position: fixed;
+  top: 90%;
+  right: 104px;
+  z-index: 9999;
+}
+
+.send {
+    background-color: coral;
+    float: right;
+    height: 40px;
+}
+.close {
+    margin-top: 0px;
+}
+.chat-block {
+    max-height: 420px;
+    width: 300px;
+    position: fixed;
+    top: 33%;
+    right: 110px;
+    bottom: 4%;
+    z-index: 50;
+    border: 1px solid #ccc;
+    border-radius: 10px 10px 20px 20px;
+    box-shadow: 2px 3px 6px #aaa;  
+    background-color: #f4f4f4;
+}
+.msg_head {
+    text-align: center;
+    height: 40px;
+    background: #3498db;
+    padding: 10px;
+    color: #fff;
+    border-radius: 10px 10px 0px 0px;
+    border: 0px solid #fff;
+}
+.msg_footer {
+    z-index: 52;
+}
+.msg_body {
+    height: 305px;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.msg_input {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding: 5px;
+    border-top: 1px solid #ddd;
+}
+/* .msg_a{
+padding:10px;
+text-align:left;
+background-color:#FDE4CE;
+margin:5px 5px 5px 5px;
+border-radius:15px 0px 20px 15px;
+
+  background: linear-gradient(to left, #FFF , #FDE4CE); 
+  background: -webkit-linear-gradient(left, #FFF , #FDE4CE); 
+  background: -o-linear-gradient(left,  #FFF , #FDE4CE); 
+  background: -moz-linear-gradient(left, #FFF , #FDE4CE);  
+  background: linear-gradient(to left,  #FFF , #FDE4CE); 
+ 
+}
+.msg_b{
+padding:10px;
+text-align:right;
+background-color:#DDE4CE;
+margin:5px 5px 5px 5px;
+border-radius:0px 15px 15px 15px;
+
+ background: linear-gradient(to right, #FFF , #DDE4CE); 
+ background: -webkit-linear-gradient(right, #FFF , #DDE4CE); 
+ background: -o-linear-gradient(right,  #FFF , #DDE4CE); 
+ background: -moz-linear-gradient(right, #FFF , #DDE4CE);  
+ background: linear-gradient(to right,  #FFF , #DDE4CE); 
+
+} */
+
+.msg_a {
+    position: relative;
+    background: #FDE4CE;
+    padding: 10px;
+    min-height: 10px;
+    margin-bottom: 5px;
+    margin-right: 15px;
+    border-radius: 5px;
+    max-width: 215px;
+    margin: 5px 5px 5px 20px;
+    margin-left: 10px;
+}
+.msg_a:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 10px solid;
+    border-color: transparent #FDE4CE transparent transparent;
+    left: -20px;
+    top: 7px;
+}
+.msg_b {
+    background: #DDE4CE;
+    padding: 10px;
+    min-height: 15px;
+    margin-bottom: 5px;
+    position: relative;
+    margin-left: 10px;
+    border-radius: 5px;
+    max-width: 250px;
+    margin: 5px 5px 5px 20px;
+}
+.msg_b:after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    border: 10px solid;
+    border-color: transparent transparent transparent #DDE4CE;
+    right: -20px;
+    top: 7px;
+}
+#notification {
+    padding: 4px;
+    background-color: #eee;
+    font-size: 12px;
+    border-top: 1px dotted #ddd;
+}
+#mark {
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: #4682B4;
+    float: right;
+    border: 2px solid #222;
+}
+#mark:hover {
+    background-color: #00BFFF;
+    border: 2px solid #fff;
+}

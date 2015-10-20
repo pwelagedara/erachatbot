@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" ng-app="APP">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="chatbox.css"/>
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+    <title>Document</title>
+</head>
+
+<body>
+    <p>Name:
+        <input type="text" ng-model="name">
+    </p>
+    <chatbox ng-country="{{name}}" ng-city="Colombo" ng-fname="Draco"></chatbox>
+    <!--<chatbox ng-country="{{loggedUser.role.name}}" ng-city="Colombo"></chatbox>-->
+    <h1 namer="" data-first="Joe" data-last="Maddalone"></h1>
+    <h1 namer="" data-first="Mr" data-last="Spartacus"></h1>
+    <h1 namer="" data-first="Jim" data-last="Smith"></h1>
+    <h1 namer="" data-first="John" data-last="Jones"></h1>
+    <script data-require="angular.js@1.2.x" src="http://code.angularjs.org/1.2.7/angular.js" data-semver="1.2.7"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="namer.js"></script>
+    <script src="chatbox-directive.js"></script>
+    <script>
+        var APP = angular.module('APP', ['namer', 'chatbox']);
+    </script>
+</body>
+
+</html>
